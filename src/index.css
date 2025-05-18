@@ -11,7 +11,7 @@
   --color-card: hsl(var(--card));
 
   --animate-float: float 6s ease-in-out infinite;
-  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 10s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
   --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
@@ -49,10 +49,10 @@
   }
   @keyframes meteor {
     0% {
-      transform: rotate(215deg) translateX(0);
+      transform: rotate(210deg) translateX(0);
       opacity: 1;
     }
-    70% {
+    60% {
       opacity: 1;
     }
     100% {
@@ -124,7 +124,9 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  text-shadow:
+  0 0 30px rgba(139, 92, 246, 0.5),
+  0 0 70px rgba(167, 139, 250, 1);
 }
 
 @utility card-hover {
