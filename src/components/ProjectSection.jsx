@@ -7,7 +7,7 @@ const projects = [
         title: "Focusmates",
         description: "A productivity app that helps you stay focused and accountable. Web app made with framework NextJS and Firebase.",
         image: "/projects/Focusmates.png",
-        tags: ["NextJS", "Firebase", "TailwindCSS", "TypeScript", "Web App", "Authentication"],
+        tags: ["NextJS", "Firebase", "TailwindCSS", "TypeScript", "Authentication"],
         githubUrl: "https://github.com/MinhQuan-Tran/FocusMates"
     },
     {
@@ -33,7 +33,7 @@ export const ProjectSection = () => {
                 crafted with attention to detail, performance, and user experience.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project, key) => (
+            {projects.map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
