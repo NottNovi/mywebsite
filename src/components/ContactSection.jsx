@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import {Clock, Mail} from "lucide-react";
+import {Clock, Mail, Instagram, MapPin} from "lucide-react";
+import { GrSnapchat } from "react-icons/gr";
 import { SiRobloxstudio } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 
@@ -38,30 +39,47 @@ export const ContactSection = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
 
-          <div className="flex flex-col items-left justify-center bg-card rounded-lg p-6 shadow-xs">
-          <h3>MY CONTACTS</h3>
-            <ul className="space-y-4 items-text-left text-base">
-              <li>
+          <div className="flex flex-col items-left bg-card rounded-lg p-6 shadow-xs">
+          <h3 className="text-3xl font-bold">MY CONTACTS</h3>
+            <ul className="space-y-4 items-text-left text-base pt-6">
+              <li className="flex items-center gap-3 text-foreground">
                 <Mail size={25} className="text-primary" />
+                <a href= "mailto:notnovidev@gmail.com"><span className="hover:text-primary text-lg">notnovidev@gmail.com</span></a>
+              </li>
+              <li className="flex items-center gap-3 text-foreground">
+                <Instagram size={25} className="text-primary" />
+                <a href= "https://www.instagram.com/j03v11?igsh=cXkzdDh2cjg4ZXV5" target="_blank" rel="noopener noreferrer"><span className="hover:text-primary text-lg">j03v11</span></a>
+              </li>
+              <li className="flex items-center gap-3 text-foreground">
+                <GrSnapchat size={25} className="text-primary" />
+                <a href="https://www.snapchat.com/add/nova-050?share_id=A_v-a0ax5bs&locale=en-AU" target="_blank" rel="noopener noreferrer"><span className="text-lg hover:text-primary">nova-050</span></a>
               </li>
               <li className="flex items-center gap-3 text-foreground">
                 <FaDiscord size={25} className="text-primary" />
-                <span className="text-lg">6okv</span>
+                <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer"><span className="text-lg hover:text-primary">6okv</span></a>
               </li>
             </ul>
           </div>
           
-          <div className="flex flex-col items-left justify-center bg-card rounded-lg p-6 pt-8 shadow-xs">
-          
-            <ul className="space-y-4 text-left text-base">
+          <div className="flex flex-col items-left bg-card rounded-lg p-6 shadow-xs">
+          <h3 className="text-3xl font-bold">OTHER DETAILS</h3>
+            <ul className="space-y-6 text-left text-base pt-4">
+              <li className="flex items-left text-center gap-3 text-foreground">
+                <MapPin size={30} className="text-primary" />
+                <a href="https://www.google.com/maps/place/Melbourne+VIC/@-37.9707263,144.3937764,9z/data=!3m1!4b1!4m6!3m5!1s0x6ad646b5d2ba4df7:0x4045675218ccd90!8m2!3d-37.8136276!4d144.9630576!16zL20vMGNoZ3pt?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><span className="text-lg hover:text-primary">Melbourne, VIC. Australia</span></a>
+              </li>
               <li className="flex items-left text-center gap-3 text-foreground">
                 <Clock size={30} className="text-primary" />
-                <span className="text-lg">Current Time (Melbourne): </span>
+                <span className="text-lg"> My Current Time: (AEST) </span>
               </li>
               <li className="items-center gap-3  text-foreground">
-                <span className="text-4xl font-bold text-primary">{melbourneTime}</span>
-      
+              <span className="text-4xl font-bold text-primary">{melbourneTime}</span>
               </li>
+              <li className="flex items-center gap-3 text-foreground">
+                <SiRobloxstudio size={25} className="text-primary" />
+                <a href="https://www.roblox.com/users/2647901160/profile" target="_blank" rel="noopener noreferrer"><span className="text-lg hover:text-primary">@PassedOntoYou</span></a>
+              </li>
+              
             </ul>
           </div>
         </div>
