@@ -10,5 +10,6 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+    base: './', // This is important for deploying to GitHub Pages
   },
 })

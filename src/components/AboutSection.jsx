@@ -16,7 +16,7 @@ export const AboutSection = () => {
                     </h3>
 
                     <p className="text-muted-foreground"> 
-                        I am a passionate devloper with a strong interest in web and game devlopment. I like trying out new things that would help me learn more about the field. 
+                        I am a passionate developer with a strong interest in web and game development. I like trying out new things that would help me learn more about the field. 
                         My dream is to develop a game or a website which would have at least have 1 million user visits.
                         
                     </p>
@@ -67,7 +67,7 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg"> Project Management</h4>
                                 <p className="text-muted-foreground">
-                                    Experience in managing projects and collaborating with teams effctively
+                                    Experience in managing projects and collaborating with teams effectively
                                 </p>
                             </div>
                         </div>
